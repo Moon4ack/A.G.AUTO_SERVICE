@@ -1,99 +1,187 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>A.G.AUTO SERVICE</title>
-  </head>
 
-  <body>
-    <header class="bg-orange text-white text-center py-5">
-      <h1>A.G.AUTO SERVICE</h1>
-      <p>Якісні послуги, довіра клієнтів</p>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>A.G.AUTO SERVICE</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
 
-    <section class="my-5" id="photo-carousel">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://autoexpert-consulting.com/uploads/posts/2015-07/1436877132_01.jpg" class="d-block w-100" alt="Фото 1">
-          </div>
-          <div class="carousel-item">
-            <img src="https://auto.today/media/res/6/7/2/3/1/67231.pvwvoc.1280.jpg" class="d-block w-100" alt="Фото 2">
-          </div>
-          <div class="carousel-item">
-            <img src="https://auto.today/media/res/6/7/2/0/2/67202.pvwuh0.1280.jpg" class="d-block w-100" alt="Фото 3">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+<body>
+  <header class="header">
+    <div class="main-header-left-block">
+      <div class="header-logo">
+        <img src="data/logo.png" alt="A.G.AUTO SERVICE Logo">
       </div>
-    </section>
 
-    <section class="text-center my-5" id="services">
-      <h2 class="h2-important">Наші послуги</h2>
-      <div class="row">
-        <div class="col-md-4 animate-block">
-          <h3>Заміна масла</h3>
-          <p>Високоякісне моторне масло та топові послуги.</p>
-        </div>
-        <div class="col-md-4 animate-block">
-          <h3>Огляд</h3>
-          <p>Комплексні перевірки для забезпечення здоров'я вашого автомобіля.</p>
-        </div>
-        <div class="col-md-4 animate-block">
-          <h3>Сервіс гальм</h3>
-          <p>Ми забезпечуємо ідеальну роботу ваших гальм.</p>
-        </div>
-        <div class="col-md-4 animate-block">
-          <h3>Сервіс двигуна</h3>
-          <p>Ми діагностуємо та вирішуємо проблеми, пов'язані з двигуном.</p>
-        </div>
-        <div class="col-md-4 animate-block">
-          <h3>Заміна акумулятора</h3>
-          <p>Перевірте та, якщо потрібно, замініть акумулятор.</p>
-        </div>
-        <div class="col-md-4 animate-block">
-          <h3>Авто підбір та авто викуп</h3>
-          <p></p>
-        </div>
+      <div class="header-left-block">
+        <h1 class="header-title">A.G.AUTO SERVICE</h1>
+        <p class="header-subtitle">Якісні послуги, довіра клієнтів</p>
       </div>
+    </div>
+
+    <nav class="header-right-block">
+      <a href="#services">Наші послуги</a>
+      <a href="#request-form">Форма зворотнього зв`язку</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="" id="video-section">
+    <video width="100%" autoplay muted loop>
+      <source src="data/main_video.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видеотег.
+    </video>
+  </section>
+
+  <section class="text-center " id="services">
+    <h2 class="h2-important">Наші послуги</h2>
+    <div class="row">
+      <div class="col-md-4 animate-block">
+        <h3>Заміна мастила</h3>
+        <p>Високоякісна моторна олива та фільтра.</p>
+        <p>Від 500грн</p>
+      </div>
+      <div class="col-md-4 animate-block">
+        <h3>Огляд ходової частини</h3>
+        <p>Комплексні перевірки для забезпечення здоров'я вашого автомобіля.</p>
+        <p>Від 350грн</p>
+      </div>
+      <div class="col-md-4 animate-block">
+        <h3>Сервіс гальм</h3>
+        <p>Ми забезпечуємо ідеальну роботу ваших гальм.</p>
+        <p>Від 800грн</p>
+      </div>
+      <div class="col-md-4 animate-block">
+        <h3>Сервіс двигуна</h3>
+        <p>Ми діагностуємо та вирішуємо проблеми, пов'язані з двигуном.</p>
+        <p>Від 1000грн</p>
+      </div>
+      <div class="col-md-4 animate-block">
+        <h3>Авто викуп</h3>
+        <p>Бистрий та надійний автовикуп.</p>
+        <p>Від 500usd</p>
+      </div>
+      <div class="col-md-4 animate-block">
+        <h3>Авто підбір</h3>
+        <p class="uz-block">Експертний огляд до 10 автомобілів, які рекомендовані
+          за критеріями первинного відбору в рамках даної послуги.
+          Найкращі пропозиції оглядаємо на СТО.</p>
+        <p>Від 200 до 450usd</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="conct-block">
+    <section class="text-center" id="request-form">
+      <h2 class="h2-contact">Для зворотнього зв`язку.</h2>
+      <form method="POST" id="feedback-form">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Повне ім'я" required>
+        </div>
+        <div class="mb-3">
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Телефон" required>
+        </div>
+        <div class="mb-3">
+          <select class="form-select" id="service" name="service">
+            <option selected>Оберіть послугу</option>
+            <option value="Заміна мастила">Заміна мастила</option>
+            <option value="Огляд ходової частини">Огляд ходової частини</option>
+            <option value="Сервіс гальм">Сервіс гальм</option>
+            <option value="Сервіс двигуна">Сервіс двигуна</option>
+            <option value="Авто викуп">Авто викуп</option>
+            <option value="Авто підбір">Авто підбір</option>
+            <option value="Інше">Інше</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Надіслати</button>
+      </form>
     </section>
 
     <section class="bg-light text-center py-5 animate-block" id="contact">
       <h2 class="h2-contact">Зв'яжіться з нами</h2>
-      <p>Головна вулиця, 123, Будь-яке місто, США</p>
-      <p>Email: info@servicestation.com</p>
+      <p><a
+          href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D1%80%D0%BA%D0%BE+%D0%92%D0%BE%D0%B2%D1%87%D0%BE%D0%BA,+6,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4945991,30.4660806,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cd8d07bb91f3:0x445e789d6218207c!8m2!3d50.4945991!4d30.4686555!16s%2Fg%2F1tq6hlg7?entry=ttu">Марка
+          Вовчка, 6, Київ, Україна</a></p>
       <p>
-        <a href="tel:+380939638016"><i class="fas fa-phone"></i> Телефон: +380 93 963 8016</a>
-        <a href="https://t.me/maksim_p0" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+        <a href="tel:+380938909044"><i class="fas fa-phone"></i> Телефон: +380 93 890 90 44</a>
+        <a href="https://t.me/AGAutoo" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+        <a href="https://instagram.com/a.g.auto_service" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
       </p>
     </section>
-    
-    <section class="map">
-      <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-        src="https://www.openstreetmap.org/export/embed.html?bbox=30.4827%2C50.4330%2C30.5437%2C50.4730&amp;layer=mapnik" 
-        style="border: 1px solid black">
-      </iframe>
-    </section>    
+  </div>
 
-    <footer class="text-center py-4">
-      <p>&copy; 2023 A.G.AUTO SERVICE. Всі права захищені.</p>
-    </footer>
+  <section class="map">
+    <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      src="data/osm_map.html" style="border: 1px solid black">
+    </iframe>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <footer class="text-center py-4">
+    <p>&copy; 2023 A.G.AUTO SERVICE. Всі права захищені.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <a href="tel:+380938909044" class="floating-button">
+    <i class="fas fa-phone"></i>
+  </a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#feedback-form').submit(function (e) {
+        e.preventDefault();
+
+        var lastSubmission = localStorage.getItem('lastSubmissionTime');
+        var currentTime = new Date().getTime();
+
+        // Check if 2 hours have passed since the last submission
+        if (lastSubmission !== null && currentTime - lastSubmission < 7200000) {
+          Swal.fire({
+            title: 'Помилка!',
+            text: 'Заявку можна відправляти лише раз на 2 години.',
+            icon: 'error',
+            confirmButtonColor: '#ff7f00',
+            backdrop: 'rgba(0,0,0,0.4)'
+          });
+          return;
+        }
+
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(this).serialize(),
+          success: function (data) {
+            localStorage.setItem('lastSubmissionTime', currentTime); // Update the time of last submission
+            Swal.fire({
+              title: 'Успішно надіслано!',
+              text: 'Вашу заявку надіслано. Чекайте, з вами зв’яжуться через 30 хвилин.',
+              icon: 'success',
+              confirmButtonColor: '#ff7f00',
+              backdrop: 'rgba(0,0,0,0.4)'
+            });
+          },
+          error: function (data) {
+            Swal.fire({
+              title: 'Помилка!',
+              text: 'Сталася помилка при відправці заявки.',
+              icon: 'error',
+              confirmButtonColor: '#ff7f00',
+              backdrop: 'rgba(0,0,0,0.4)'
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
 </html>

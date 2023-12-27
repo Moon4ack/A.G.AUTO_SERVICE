@@ -32,6 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const form = document.getElementById("request-form");
+
+    form.addEventListener("submit", function(event) {
+       const phoneInput = document.getElementById("phone");
+       const phoneRegex = /^(\+380)[0-9]{9}$/;
+ 
+       if (!phoneRegex.test(phoneInput.value)) {
+          alert("Будь ласка, введіть дійсний український номер телефону (+380XXXXXXXXX).");
+          event.preventDefault(); // Отмена отправки формы
+       }
+    });
+
     // Устанавливаем высоту при загрузке страницы
     window.addEventListener('load', setCarouselHeight);
 
